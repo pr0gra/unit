@@ -1,0 +1,30 @@
+.header {
+  padding: 41px 20px 20px;
+}
+
+.header img {
+  display: flex;
+  margin: 0 auto;
+}
+
+.link {
+  color: white;
+}
+
+.navigation {
+  padding-top: 42px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.navigation-element{
+  padding: 5px 23px;
+}
+
+.navigation-array {
+  gap: 40px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  list-style-type: none;
+}

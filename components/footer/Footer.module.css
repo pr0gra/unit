@@ -1,0 +1,15 @@
+.logo {
+  margin: 0 auto;
+  display: flex;
+}
+
+.footer {
+  padding: 40px;
+
+  background: #000b2a;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+}

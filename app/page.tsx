@@ -1,95 +1,87 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className={styles["main"]}>
+      <div className={styles["hero"]}>
+        <div className={styles["text-part"]}>
+          <h2 className={styles["title"]}>создаём реальные проекты</h2>
+          <h3 className={styles["subtitle"]}>
+            Мы делаем приложения <br /> игры и сайты
+          </h3>
+        </div>
+        <div className={styles["more-info"]}>
+          <div className={styles["more-info-text-container"]}>
+            <p className={styles["more-info-text"]}>
+              ЮНИТ - это студенческое IT объединение в Екатеринбурге, которое
+              базируется на базе экономического университета (УРГЭУ)
+            </p>
+          </div>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+      <div className={styles["about-part"]}>
+        <div className={styles['about-us-top-part']}>
+          <div className={styles["about-us"]}>
+            <p className={styles["about-us-title"]}>
+              Навыки, которые мы прокачиваем каждый день:{" "}
+            </p>
+            <nav className={styles["about-array-container"]}>
+              <ul className={styles["about-array"]}>
+                <li className={styles["about-element"]}>
+                  <p>Дизайн</p>
+                </li>
+                <li className={styles["about-element"]}>
+                  <p>Программирование</p>
+                </li>
+                <li className={styles["about-element"]}>
+                  <p>3D-моделирование</p>
+                </li>
+                <li className={styles["about-element"]}>
+                  <p>Медиа</p>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div className={styles["about-us"]}>
+            <p className={styles["about-us-title"]}>
+              Мероприятия, которые мы проводим:
+            </p>
+            <nav className={styles["about-array-container"]}>
+              <ul className={styles["about-array"]}>
+                <li className={styles["about-element"]}>
+                  <p>Собственные лекции</p>
+                </li>
+                <li className={styles["about-element"]}>
+                  <p>Лекции от известных IT-компаний</p>
+                </li>
+                <li className={styles["about-element"]}>
+                  <p>Хакатоны</p>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div className={styles["join-us-part"]}>
+          <p className={styles["join-us-text"]}>
+            Мы верим, что уже будучи студентом можно создавать проекты, меняющие
+            жизнь людей
           </p>
-        </a>
+
+          <Link
+            className={styles["join-us-button"]}
+            href={"https://vk.com/unit.usue"}
+          >
+            Стать частью команды
+          </Link>
+
+          <p className={styles["join-us-text-desktop"]}>
+            Мы верим, что уже будучи студентом можно создавать проекты, меняющие
+            жизнь людей!
+          </p>
+        </div>
       </div>
     </main>
-  )
+  );
 }
