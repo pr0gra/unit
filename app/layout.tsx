@@ -1,4 +1,3 @@
-import { Header } from "@/app/components/Header";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Footer } from "@/app/components/Footer";
@@ -22,10 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.className}`}>
       <body>
-        <div className="background-image">
-          <Header />
-          {children}
-        </div>
+        <div>{children}</div>
         <Footer />
       </body>
     </html>
