@@ -1,5 +1,5 @@
 "use client";
-import styles from "./page.module.css";
+
 import * as yup from "yup";
 import { useFormik } from "formik";
 
@@ -15,6 +15,7 @@ export default function Registration() {
     phoneNumber: yup.string().required("Это обязательное поле"),
     birthdayDate: yup.string().required("Это обязательное поле"),
   });
+
   const { values, errors, touched, isSubmitting, handleChange, handleSubmit } =
     useFormik({
       initialValues: {
@@ -29,13 +30,14 @@ export default function Registration() {
       },
       validationSchema: basicSchema,
     });
+
   return (
-    <div className={styles["registration"]}>
-      <form onSubmit={handleSubmit} className={styles["form-part"]}>
-        <h2 className={styles["form-title"]}>Регистрация</h2>
-        <div className={styles["input-container"]}>
+    <div className="">
+      <form onSubmit={handleSubmit} className="">
+        <h2 className="">Регистрация</h2>
+        <div className="">
           <input
-            className={styles["input"]}
+            className=""
             type="text"
             id="name"
             placeholder="Имя"
@@ -43,9 +45,9 @@ export default function Registration() {
             value={values.name}
           />
         </div>
-        <div className={styles["input-container"]}>
+        <div className="">
           <input
-            className={styles["input"]}
+            className=""
             type="text"
             id="surname"
             placeholder="Фамилия"
@@ -53,9 +55,9 @@ export default function Registration() {
             value={values.surname}
           />
         </div>
-        <div className={styles["input-container"]}>
+        <div className="">
           <input
-            className={styles["input"]}
+            className=""
             type="text"
             id="email"
             placeholder="Электронная почта"
@@ -63,9 +65,9 @@ export default function Registration() {
             value={values.email}
           />
         </div>
-        <div className={styles["input-container"]}>
+        <div className="">
           <input
-            className={styles["input"]}
+            className=""
             type="text"
             id="phoneNumber"
             placeholder="Номер телефона"
@@ -73,9 +75,9 @@ export default function Registration() {
             value={values.phoneNumber}
           />
         </div>
-        <div className={styles["input-container"]}>
+        <div className="">
           <input
-            className={styles["input"]}
+            className=""
             type="text"
             id="birthdayDate"
             placeholder="Дата рождения"
@@ -83,10 +85,10 @@ export default function Registration() {
             value={values.birthdayDate}
           />
         </div>
-        <p className={styles["text"]}>
+        <p className="">
           <input type="checkbox" /> Ознакомлен с политикой конфиденциальности
         </p>
-        <button typeof="submit" className={styles["button"]}>
+        <button typeof="submit" className="">
           Зарегистрироваться
         </button>
       </form>

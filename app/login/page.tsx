@@ -1,20 +1,21 @@
 "use client";
+
 import Image from "next/image";
-import styles from "./page.module.css";
 import * as yup from "yup";
 import { useFormik } from "formik";
 import cx from "classnames";
 import Link from "next/link";
 
-import personIcon from "../../assets/icons/login-person.svg";
-import horizontalLineIcon from "../../assets/icons/horizontal-line.svg";
-import keyIcon from "../../assets/icons/password-key.svg";
+import personIcon from "../components/login-person.svg";
+import horizontalLineIcon from "../components/horizontal-line.svg";
+import keyIcon from "../components/password-key.svg";
 
 export default function Login() {
   const basicSchema = yup.object().shape({
     name: yup.string().required("Это обязательное поле"),
     password: yup.string().required("Это обязательное поле"),
   });
+
   const { values, errors, touched, isSubmitting, handleChange, handleSubmit } =
     useFormik({
       initialValues: {
@@ -26,14 +27,15 @@ export default function Login() {
       },
       validationSchema: basicSchema,
     });
+
   return (
-    <div className={styles["registration"]}>
-      <form onSubmit={handleSubmit} className={styles["form-part"]}>
-        <h2 className={styles["form-title"]}>Добро пожаловать!</h2>
-        <div className={styles["input-container"]}>
+    <div className="">
+      <form onSubmit={handleSubmit} className="">
+        <h2 className="">Добро пожаловать!</h2>
+        <div className="">
           <Image src={personIcon} alt="" />
           <input
-            className={styles["input"]}
+            className=""
             type="text"
             id="name"
             placeholder="Имя"
@@ -41,10 +43,10 @@ export default function Login() {
             value={values.name}
           />
         </div>
-        <div className={styles["input-container"]}>
+        <div className="">
           <Image src={keyIcon} alt="" />
           <input
-            className={styles["input"]}
+            className=""
             type="text"
             id="password"
             placeholder="Пароль"
@@ -53,25 +55,17 @@ export default function Login() {
           />
         </div>
         {!isSubmitting ? (
-          <button typeof="submit" className={styles["button"]}>
+          <button typeof="submit" className="">
             Войти
           </button>
         ) : (
-          <button
-            disabled
-            typeof="submit"
-            className={cx(styles["button"], styles["button-disabled"])}
-          >
+          <button disabled typeof="submit" className={cx("", "")}>
             Отправлено
           </button>
         )}
-        <Image
-          className={styles["horizontal-line"]}
-          src={horizontalLineIcon}
-          alt=""
-        />
-        <p className={styles["text"]}>Вы не зарегистрированы?</p>
-        <Link href={"/registration"} className={styles["registration-link"]}>
+        <Image className="" src={horizontalLineIcon} alt="" />
+        <p className="">Вы не зарегистрированы?</p>
+        <Link href={"/registration"} className="">
           Регистрация
         </Link>
       </form>
