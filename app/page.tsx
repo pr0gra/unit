@@ -6,6 +6,7 @@ const ablation = localFont({ src: "./Ablation-Extra-Bold.otf" });
 export default function Home() {
   return (
     <div className="bg-gray-500">
+      <Link href="/login" className="fixed top-0 right-0 bg-white rounded-full py-2 px-4 mt-4 mr-4">Войти</Link>
       <div className="flex justify-center py-8">
         <svg
           width="75"
@@ -55,72 +56,67 @@ export default function Home() {
           Авторы
         </Link>
       </div>
-      <div className="">
-        <div className="max-w-4xl w-full mx-auto">
-          <div className={`${ablation.className} text-white text-7xl mt-40`}>
-            <div>создаём</div>
-            <div>реальные</div>
-            <div>проекты</div>
-          </div>
-          <div className="text-white text-2xl mt-4 mb-8">
-            <div>Мы делаем приложения</div>
-            <div>игры и сайты</div>
-          </div>
-          <div className="bg-white w-[300px] h-1"></div>
+      <div className="max-w-4xl w-full mx-auto">
+        <div className={`${ablation.className} text-white text-7xl mt-40`}>
+          <div>создаём</div>
+          <div>реальные</div>
+          <div>проекты</div>
         </div>
-        <div className="bg-gray-500 rounded-xl">
+        <div className="text-white text-2xl mt-4 mb-8">
+          <div>Мы делаем приложения</div>
+          <div>игры и сайты</div>
+        </div>
+        <div className="bg-white w-[300px] h-1"></div>
+        <div className="bg-neutral-300 rounded-xl w-[360px] mt-20 ml-auto p-6">
+          ЮНИТ - это студенческое IT объединение в Екатеринбурге, которое
+          базируется на базе экономического университета (УРГЭУ)
+        </div>
+        <div className="text-white text-center pt-20">
           <div className="">
-            <p className="">
-              ЮНИТ - это студенческое IT объединение в Екатеринбурге, которое
-              базируется на базе экономического университета (УРГЭУ)
-            </p>
+            <p className="">Навыки, которые мы прокачиваем каждый день: </p>
+            <nav className="">
+              <ul className="">
+                <li className="">
+                  <p>Дизайн</p>
+                </li>
+                <li className="">
+                  <p>Программирование</p>
+                </li>
+                <li className="">
+                  <p>3D-моделирование</p>
+                </li>
+                <li className="">
+                  <p>Медиа</p>
+                </li>
+              </ul>
+            </nav>
           </div>
-        </div>
-      </div>
-      <div className="pl-[20px]">
-        <div className="pb-[48px]">
-          <p className="">Навыки, которые мы прокачиваем каждый день: </p>
-          <nav className="">
-            <ul className="">
-              <li className="">
-                <p>Дизайн</p>
-              </li>
-              <li className="">
-                <p>Программирование</p>
-              </li>
-              <li className="">
-                <p>3D-моделирование</p>
-              </li>
-              <li className="">
-                <p>Медиа</p>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div className="">
-          <p className="">Мероприятия, которые мы проводим:</p>
-          <nav className="">
-            <ul className="">
-              <li className="">
-                <p>Собственные лекции</p>
-              </li>
-              <li className="">
-                <p>Лекции от известных IT-компаний</p>
-              </li>
-              <li className="">
-                <p>Хакатоны</p>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div className="">
-          <p className="">
-            Мы верим, что уже будучи студентом можно создавать проекты, меняющие
-            жизнь людей
-          </p>
-          <Link className="" href="https://vk.com/unit.usue">
+          <div className="">
+            <p className="pt-20">Мероприятия, которые мы проводим:</p>
+            <nav className="">
+              <ul className="">
+                <li className="">
+                  <p>Собственные лекции</p>
+                </li>
+                <li className="">
+                  <p>Лекции от известных IT-компаний</p>
+                </li>
+                <li className="">
+                  <p>Хакатоны</p>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <Link
+            className="bg-yellow-500 rounded-full w-[260px] text-center py-2 block mx-auto mt-20"
+            href="https://vk.com/unit.usue"
+          >
             Стать частью команды
           </Link>
+          <div className="py-8 text-white text-center">
+            Мы верим, что уже будучи студентом можно создавать проекты, меняющие
+            жизнь людей
+          </div>
         </div>
       </div>
     </div>
