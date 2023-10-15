@@ -1,0 +1,91 @@
+.registration {
+  height: 100vh;
+  width: 30rem;
+  margin: 0 auto;
+}
+
+.form-part {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-top: 66px;
+  border-radius: 30px;
+  border: 1px solid #dce1e6;
+  padding: 66px;
+  background: #fff;
+}
+
+.input-container {
+  padding-left: 23px;
+  border-radius: 22px;
+  border: 1px solid #dce1e6;
+  display: flex;
+  align-items: center;
+  background: #ededed;
+}
+
+.input {
+  all: unset;
+  padding: 23px, 33px;
+
+  background: #ededed;
+}
+
+.input[type="text"] {
+  font-family: "Inter";
+  color: #8c8c8c;
+  padding: 23px;
+}
+
+.input::placeholder {
+  color: #8c8c8c;
+}
+
+.form-title {
+  color: #000;
+  margin-bottom: 80px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button {
+  all: unset;
+  text-align: center;
+  color: white;
+  border-radius: 40px;
+  background: #000;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 20px 30px;
+  font-family: "Inter";
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.horizontal-line {
+  margin: 0 auto;
+}
+
+.text {
+  color: #8c8c8c;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 40px;
+}
+
+.registration-link {
+  all: unset;
+  font-family: "Inter";
+  text-align: center;
+  padding: 15px 72px;
+  border-radius: 40px;
+  border: 1px solid #000;
+}

@@ -7,28 +7,26 @@ import Link from "next/link";
 export function Header() {
   return (
     <header className={styles["header"]}>
-      <Link href={"https://vk.com/unit.usue"}><Image src={logoHeader} alt="logo"></Image></Link>
+      <div className={styles["top-header"]}>
+        <Image src={logoHeader} alt="logo"></Image>
+        <Link className={styles["login-button"]} href={"/login"}>
+          Войти
+        </Link>
+      </div>
       <nav className={styles["navigation"]}>
         <ul className={styles["navigation-array"]}>
-          <li
-            style={{ borderRadius: "22px", background: "#FFF" }}
-            className={styles["navigation-element"]}
-          >
-            <Link
-              style={{ color: "black"}}
-              className={styles["link"]}
-              href={"/"}
-            >
+          <li className={styles["navgigation-element"]}>
+            <Link className={styles["link"]} href={"/"}>
               О нас
             </Link>{" "}
           </li>
-          <li className={styles["navigation-element"]}>
-            <Link style={{color: "rgb(246 249 232 / 16%)"}} className={styles["link"]} href={"/"}>
+          <li className={styles["navgigation-element"]}>
+            <Link className={styles["link"]} href={"/"}>
               Проекты
             </Link>
           </li>
-          <li className={styles["navigation-element"]}>
-            <Link style={{color: "rgb(246 249 232 / 16%)"}} className={styles["link"]} href={"/"}>
+          <li className={styles["navgigation-element"]}>
+            <Link className={styles["link"]} href={"/"}>
               Авторы
             </Link>
           </li>

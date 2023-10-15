@@ -50,7 +50,6 @@
 
 .join-us-text {
   color: #ffc700;
-  text-align: center;
 }
 
 .join-us-button {
@@ -62,55 +61,5 @@
   color: #fff;
 }
 
-.join-us-text-desktop{
-  display: none;
-}
-
-
-@media (min-width:768px){
-  .text-part {
-    width: 22rem;
-  }
-
-  .more-info{
-    float: right;
-    position: relative;
-    padding: 0;
-    width: 440px;
-  }
-
-  .more-info-text-container{    
-    padding: 10px 20px;
-    border-radius: 20px;
-    position: absolute;
-    background: rgb(246 249 232 / 13%);
-  }
-
-  .about-part{
-    margin-top: 300px;;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .join-us-button{
-    max-width: 348px;
-    margin: 0 auto;
-    padding: 14px 28px;
-    font-size: 20px;
-  }
-
-  .join-us-text{
-    display: none;
-    
-  }
-
-  .join-us-text-desktop{
-    margin-top: 44px;
-    display: flex;
-    font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-  }
+.join-us-text-container {
 }

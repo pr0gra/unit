@@ -17,14 +17,23 @@
   margin: 0 auto;
 }
 
-.navigation-element{
-  padding: 5px 23px;
-}
-
 .navigation-array {
   gap: 40px;
   display: flex;
   margin: 0 auto;
   align-items: center;
   list-style-type: none;
+}
+
+.login-button {
+  all: unset;
+  color: black;
+  background: white;
+  border-radius: 20px;
+  padding: 15px 30px;
+  top: 32px;
+  right: 20px;
+  font-family: "Inter";
+  position: absolute;
+  cursor: pointer;
 }

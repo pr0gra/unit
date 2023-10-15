@@ -22,46 +22,44 @@ export default function Home() {
         </div>
       </div>
       <div className={styles["about-part"]}>
-        <div className={styles['about-us-top-part']}>
-          <div className={styles["about-us"]}>
-            <p className={styles["about-us-title"]}>
-              Навыки, которые мы прокачиваем каждый день:{" "}
-            </p>
-            <nav className={styles["about-array-container"]}>
-              <ul className={styles["about-array"]}>
-                <li className={styles["about-element"]}>
-                  <p>Дизайн</p>
-                </li>
-                <li className={styles["about-element"]}>
-                  <p>Программирование</p>
-                </li>
-                <li className={styles["about-element"]}>
-                  <p>3D-моделирование</p>
-                </li>
-                <li className={styles["about-element"]}>
-                  <p>Медиа</p>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div className={styles["about-us"]}>
-            <p className={styles["about-us-title"]}>
-              Мероприятия, которые мы проводим:
-            </p>
-            <nav className={styles["about-array-container"]}>
-              <ul className={styles["about-array"]}>
-                <li className={styles["about-element"]}>
-                  <p>Собственные лекции</p>
-                </li>
-                <li className={styles["about-element"]}>
-                  <p>Лекции от известных IT-компаний</p>
-                </li>
-                <li className={styles["about-element"]}>
-                  <p>Хакатоны</p>
-                </li>
-              </ul>
-            </nav>
-          </div>
+        <div className={styles["about-us"]}>
+          <p className={styles["about-us-title"]}>
+            Навыки, которые мы прокачиваем каждый день:{" "}
+          </p>
+          <nav className={styles["about-array-container"]}>
+            <ul className={styles["about-array"]}>
+              <li className={styles["about-element"]}>
+                <p>Дизайн</p>
+              </li>
+              <li className={styles["about-element"]}>
+                <p>Программирование</p>
+              </li>
+              <li className={styles["about-element"]}>
+                <p>3D-моделирование</p>
+              </li>
+              <li className={styles["about-element"]}>
+                <p>Медиа</p>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div className={styles["about-us"]}>
+          <p className={styles["about-us-title"]}>
+            Мероприятия, которые мы проводим:
+          </p>
+          <nav className={styles["about-array-container"]}>
+            <ul className={styles["about-array"]}>
+              <li className={styles["about-element"]}>
+                <p>Собственные лекции</p>
+              </li>
+              <li className={styles["about-element"]}>
+                <p>Лекции от известных IT-компаний</p>
+              </li>
+              <li className={styles["about-element"]}>
+                <p>Хакатоны</p>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div className={styles["join-us-part"]}>
           <p className={styles["join-us-text"]}>
@@ -75,11 +73,6 @@ export default function Home() {
           >
             Стать частью команды
           </Link>
-
-          <p className={styles["join-us-text-desktop"]}>
-            Мы верим, что уже будучи студентом можно создавать проекты, меняющие
-            жизнь людей!
-          </p>
         </div>
       </div>
     </main>
