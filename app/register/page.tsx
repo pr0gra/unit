@@ -3,7 +3,7 @@
 import * as yup from "yup";
 import { useFormik } from "formik";
 
-export default function Registration() {
+export default function Register() {
   const basicSchema = yup.object().shape({
     name: yup.string().required("Это обязательное поле"),
     surname: yup.string().required("Это обязательное поле"),
