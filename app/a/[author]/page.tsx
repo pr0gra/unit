@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export default function Author({ params }: { params: any }) {
   const [profile, setProfile] = useState(false);
+  const [project, setProject] = useState(false);
 
   function openProfile() {
     setProfile(true);
@@ -12,6 +13,10 @@ export default function Author({ params }: { params: any }) {
 
   function closeProfile() {
     setProfile(false);
+  }
+
+  function toggleProject() {
+    setProject(!project);
   }
 
   return (
@@ -100,6 +105,36 @@ export default function Author({ params }: { params: any }) {
           <Link className="px-6 py-1" href="/">
             Об авторе
           </Link>
+          <div className="relative">
+            <button
+              onClick={toggleProject}
+              className={`px-4 py-1 border-2 border-black flex items-center w-[170px] gap-2 ${
+                project ? "rounded-t-2xl" : "rounded-2xl"
+              }`}
+            >
+              <div>Создать проект</div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
+            {project && (
+              <div className="bg-white absolute border-x-2 border-b-2 w-[170px] border-black px-4 py-1 rounded-b-2xl">
+                <button className="py-1 w-full text-left">Проект</button>
+                <button className="py-1 w-full text-left">Публикацию</button>
+              </div>
+            )}
+          </div>
         </div>
         <div className="mt-10 grid grid-cols-3 gap-2">
           <div className="rounded-2xl w-full bg-gray-300 h-[200px]"></div>
