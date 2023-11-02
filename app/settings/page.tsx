@@ -7,7 +7,7 @@ export default function Settings() {
       <div className="flex gap-4">
         <div className="max-w-[240px] w-full">
           <Link
-            href="/settings"
+            href="/a/vi"
             className="block border text-sm text-center py-4 border-gray-300 rounded-t-2xl"
           >
             Личный профиль
@@ -90,11 +90,17 @@ export default function Settings() {
             </div>
             <div>
               <div className="pl-8 text-gray-500 pb-4">Коротко о себе</div>
-              <textarea rows={6} className="bg-gray-300 rounded-2xl py-4 px-8 w-full"></textarea>
+              <textarea
+                rows={6}
+                className="bg-gray-300 rounded-2xl py-4 px-8 w-full"
+              ></textarea>
             </div>
             <div>
               <div className="pl-8 text-gray-500 pb-4">Умения</div>
-              <textarea rows={6} className="bg-gray-300 rounded-2xl py-4 px-8 w-full"></textarea>
+              <textarea
+                rows={6}
+                className="bg-gray-300 rounded-2xl py-4 px-8 w-full"
+              ></textarea>
             </div>
           </div>
           <div className="pt-4">

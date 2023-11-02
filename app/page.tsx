@@ -6,7 +6,6 @@ const ablation = localFont({ src: "./Ablation-Extra-Bold.otf" });
 export default function Home() {
   return (
     <div className="bg-gray-500">
-      <Link href="/login" className="fixed top-0 right-0 bg-white rounded-full py-2 px-4 mt-4 mr-4">Войти</Link>
       <div className="flex justify-center py-8">
         <svg
           width="75"
