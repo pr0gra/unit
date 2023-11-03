@@ -87,6 +87,7 @@ export default function Register() {
         <button
           typeof="submit"
           className="bg-black rounded-full text-white w-full py-4 mt-8 mb-2"
+          type="submit"
         >
           Зарегистрироваться
         </button>
