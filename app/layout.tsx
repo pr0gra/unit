@@ -88,7 +88,7 @@ export default function RootLayout({
             </div>
           </>
         )}
-        <div>{children}</div>
+        {children}
         <div className="bg-black flex justify-center py-8">
           <svg
             width="86"
