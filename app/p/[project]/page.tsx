@@ -92,7 +92,54 @@ export default function Project({ params }: { params: any }) {
                   <div className="text-gray-400 text-xs mt-1">Программист</div>
                 </div>
               </div>
-              <div className="mb-8 text-xs text-gray-400 rounded-2xl border border-gray-300 py-2 text-center">Открыть полный список команды</div>
+              <div className="mb-8 text-xs text-gray-400 rounded-2xl border border-gray-300 py-2 text-center">
+                Открыть полный список команды
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="rounded-2xl border border-gray-300 mt-10">
+          <div className="font-medium text-center text-lg mb-1 mt-16">
+            История создания
+          </div>
+          <div className="text-center text-gray-400 mb-10">
+            Здесь вы увидите историю создания проекта - от идеи к финальному
+            результату.
+          </div>
+          <div className="flex justify-center text-sm space-x-3">
+            <Link
+              className="bg-black text-white rounded-full px-6 py-1"
+              href="/"
+            >
+              Дизайн
+            </Link>
+            <Link
+              className="px-6 py-1 border border-gray-300 rounded-full"
+              href="/"
+            >
+              Программирование
+            </Link>
+            <Link
+              className="px-6 py-1 border border-gray-300 rounded-full"
+              href="/"
+            >
+              Медиа
+            </Link>
+          </div>
+          <div className="w-full bg-gray-300 h-[400px] rounded-2xl mt-12"></div>
+          <div className="flex px-8 py-16 gap-16">
+            Был сделан первичный концепт в чёрно-белом варианте. После этого
+            согласовали логику сайта и всех элементов - создали прототип.
+            Протестировали и вуаля - финальный дизайн сайта. Проект сайта дал
+            мне возможность реализовать все свои творческие задумки.
+            <div className="flex w-[500px] items-center gap-4 border-l-2 pl-4 pr-[150px] border-gray-300">
+              <div className="shrink-0 rounded-full bg-gray-300 h-[50px] w-[50px]"></div>
+              <div>
+                <div className="text-sm whitespace-nowrap">
+                  Артемий Фемидов
+                </div>
+                <div className="text-gray-400 text-xs mt-1">Дизайнер проекта</div>
+              </div>
             </div>
           </div>
         </div>
