@@ -48,10 +48,10 @@ export default function Home() {
         <Link className="bg-white rounded-full px-6 py-1" href="/">
           О нас
         </Link>
-        <Link className="text-white px-6 py-1" href="/">
+        <Link className="text-white px-6 py-1" href="/p">
           Проекты
         </Link>
-        <Link className="text-white px-6 py-1" href="/">
+        <Link className="text-white px-6 py-1" href="/a">
           Авторы
         </Link>
       </div>

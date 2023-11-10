@@ -9,7 +9,7 @@ export default function Project({ params }: { params: any }) {
         <Link className="px-6 py-1" href="/">
           О нас
         </Link>
-        <Link className="px-6 py-1" href="/">
+        <Link className="bg-black text-white rounded-full px-6 py-1" href="/">
           Проекты
         </Link>
         <Link className="px-6 py-1" href="/">
