@@ -11,19 +11,7 @@ export default function Author({ params }: { params: any }) {
   }
 
   return (
-    <div className="pb-20">
-      <div className="text-4xl py-8 flex justify-center">юнит</div>
-      <div className="flex justify-center text-sm space-x-8">
-        <Link className="px-6 py-1" href="/">
-          О нас
-        </Link>
-        <Link className="px-6 py-1" href="/">
-          Проекты
-        </Link>
-        <Link className="px-6 py-1" href="/">
-          Авторы
-        </Link>
-      </div>
+    <>
       <div className="flex justify-center gap-6 items-center mt-20">
         <div className="bg-gray-300 rounded-full h-[150px] w-[150px]"></div>
         <div>
@@ -81,6 +69,6 @@ export default function Author({ params }: { params: any }) {
           <div className="rounded-2xl w-full bg-gray-300 h-[200px]"></div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
