@@ -26,7 +26,16 @@ export default function Register() {
         birthdayDate: "",
       },
       onSubmit: (values) => {
-        console.log(values);
+        fetch("http://185.241.192.47:8080/authorization/verification", {
+          method: "POST",
+          body: JSON.stringify({
+            email: values.email,
+            name: values.name,
+            surname: values.surname,
+            message: "",
+            dateOfBirth: values.birthdayDate,
+          }),
+        });
       },
       validationSchema: basicSchema,
     });
