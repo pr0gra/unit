@@ -6,8 +6,6 @@ import { useSelectedLayoutSegment } from "next/navigation";
 export default function Layout({ children }: { children: React.ReactNode }) {
   const segment = useSelectedLayoutSegment();
 
-  console.log(segment)
-
   return (
     <div className="pb-20">
       <div className="text-4xl py-8 flex justify-center">юнит</div>
